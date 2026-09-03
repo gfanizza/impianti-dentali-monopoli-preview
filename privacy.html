@@ -45,8 +45,14 @@
 	.btn{display:inline-block;background:var(--cta);color:#fff;padding:.7rem 1.4rem;border-radius:6px;font-weight:600;text-decoration:none;font-size:.9rem;}
 	.btn:hover{background:var(--cta-dark);}
 
-	footer{background:#1c1e1f;color:#c7cbcc;padding:2.5rem 0;font-size:.85rem;text-align:center;}
+	footer{background:#1c1e1f;color:#c7cbcc;padding:3.5rem 0 1.5rem;font-size:.9rem;}
 	footer a{color:#c7cbcc;}
+	.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2.5rem;}
+	@media (max-width:800px){.footer-grid{grid-template-columns:1fr;}}
+	footer h6{color:#fff;font-family:'Poppins',sans-serif;font-size:.95rem;margin-bottom:.9rem;}
+	footer img{height:38px;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:.9;}
+	.footer-bottom{border-top:1px solid #33373a;margin-top:2.5rem;padding-top:1.3rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;font-size:.8rem;color:#8b9095;}
+	.social a{color:#c7cbcc;text-decoration:none;margin-right:1rem;font-weight:600;font-size:.85rem;}
 </style>
 </head>
 <body>
@@ -97,8 +103,30 @@
 </div>
 
 <footer>
-	<div class="wrap">
-		<p>© 2026 Ismael Guessous. Tutti i diritti riservati. — <a href="index.html">Torna alla home</a></p>
+	<div class="wrap footer-grid">
+		<div>
+			<img src="https://impiantidentalipuglia.it/wp-content/uploads/2025/03/logo-ismael-guessous-1.png" alt="Dott. Ismael Guessous">
+			<p>Chirurgo Orale<br>Master in Chirurgia Orale e Implantologia<br>Università Cattolica di San Antonio (Murcia), Spagna</p>
+		</div>
+		<div>
+			<h6>Sedi</h6>
+			<p>Apollonia Clinica Dentale<br>Via Flaminio Valente, 21<br>70043 Monopoli (BA)</p>
+			<p>Servizi Odontoiatria Bari<br>Via Giuseppe Capruzzi, 184<br>70100 Bari (BA)</p>
+		</div>
+		<div>
+			<h6>Contatti</h6>
+			<p>Monopoli: <a href="tel:+390803525644">080 352 5644</a></p>
+			<p>Bari: <a href="tel:+390805569965">080 556 9965</a></p>
+			<p>Email: <a href="mailto:info@impiantidentalipuglia.it">info@impiantidentalipuglia.it</a></p>
+			<div class="social" style="margin-top:1rem;">
+				<a href="https://www.facebook.com/dott.ismaelguessous" target="_blank" rel="noopener">Facebook</a>
+				<a href="https://www.instagram.com/dr.ismaelguessous/" target="_blank" rel="noopener">Instagram</a>
+			</div>
+		</div>
+	</div>
+	<div class="wrap footer-bottom">
+		<span>© 2026 Ismael Guessous. Tutti i diritti riservati. — <a href="privacy.html" style="color:inherit;text-decoration:underline;">Privacy Policy</a></span>
+		<span>Anteprima di progetto — non è il sito ufficiale in produzione</span>
 	</div>
 </footer>
 
